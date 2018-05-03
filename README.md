@@ -1,7 +1,6 @@
 # Lomadee API
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/andrehrf/lomadee-api-nodejs/master/LICENSE)
-[![npm version](https://badge.fury.io/js/lomadee-api.svg)](https://badge.fury.io/js/lomadee-api)
+[![npm package](https://nodei.co/npm/lomadee-api.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/lomadee-api/)
 
 API integration with Lomadee
 
@@ -23,7 +22,7 @@ $ npm install lomadee-api
 
 let Lomadee = require("lomadee-api"),
     lomadee = new Lomadee("token", "sourceid");
-    
+
 lomadee.categories({}, (err, results) => {
     console.log(results);
 });
@@ -55,15 +54,3 @@ lomadee.deeplink("http://www.submarino.com.br/", (err, url) => {
     console.log(url); //http://links.lomadee.com/ls/T1k5YTtyR0hYZWxPTDszNTcwMTM4ODswOzk1MjswOzU3NjY7QlI7MztodHRwJTNBJTJGJTJGd3d3LnN1Ym1hcmluby5jb20uYnIlMkY7MDsw.html
 });
 ```
-
-## License
-
-  MIT
-  
-  Copyright (C) 2016 André Ferreira
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
